@@ -1,0 +1,15 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: fleet-observability
+  namespace: fleet-default
+spec:
+  branch: main
+  clientSecretName: observability-stack-ssh-key
+  correctDrift:
+    enabled: true
+  paths:
+    - observability-stack
+  repo: git@github.com:HIRO-MicroDataCenters-BV/Hiro-infra.git
+  targets:
+    - clusterName: cognitive
