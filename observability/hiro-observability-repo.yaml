@@ -1,7 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: fleet-observability
+  name: fleet-observability-cog
   namespace: fleet-default
 spec:
   branch: main
@@ -9,7 +9,7 @@ spec:
   correctDrift:
     enabled: true
   paths:
-    - observability-stack
+    - hiro-kubernetes-service/hks-system-services/observability-stack
   repo: git@github.com:HIRO-MicroDataCenters-BV/Hiro-infra.git
   targets:
     - clusterName: cognitive
