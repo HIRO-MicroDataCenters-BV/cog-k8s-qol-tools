@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: "kagameow/bbtest"
   tag: "latest"
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 imagePullSecrets: []
 nameOverride: ""
