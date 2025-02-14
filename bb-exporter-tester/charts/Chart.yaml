@@ -3,4 +3,3 @@ name: bb-exporter-tester
 description: A service to test bb-exporter for cognitive.
 type: application
 version: "0.1.0"
-appVersion: ""
