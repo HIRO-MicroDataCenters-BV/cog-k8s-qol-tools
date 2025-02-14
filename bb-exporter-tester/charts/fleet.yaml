@@ -1,0 +1,5 @@
+defaultNamespace: bb-exporter-tester
+helm:
+  releaseName: bb-exporter-tester
+  valuesFiles:
+    - ./values.yaml
