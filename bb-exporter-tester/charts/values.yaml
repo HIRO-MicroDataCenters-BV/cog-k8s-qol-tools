@@ -30,9 +30,9 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
-    port: http
+    path: /test
+    port: 8080
 readinessProbe:
   httpGet:
-    path: /
-    port: http
+    path: /test
+    port: 8080
